@@ -4,3 +4,4 @@
 - ademas de un boton "Ver en github" que enviara al usuario al repositorio en donde esta alojado esto .
 - Este seria el enlace para las Pages de github ([ https://davidvera333.github.io/vera-ruiz-david/Ejercicio-1 ](https://davidvera333.github.io/vera-ruiz-david/index.html))
 - Este seria el enlace al Repo para clonar (https://github.com/Davidvera333/vera-ruiz-david.git)
+- Este es el URL del repositorio ( https://github.com/Davidvera333/vera-ruiz-david )
