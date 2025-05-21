@@ -6,7 +6,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
 
     try {
         // Navegar al formulario
-        await driver.get('http://localhost/probas-despregue/form.html');
+        await driver.get('http://localhost/vera-ruiz-david/vera-ruiz-david/index.html');
 
         // Llenar el formulario
         await driver.findElement(By.name('nome')).sendKeys('');
