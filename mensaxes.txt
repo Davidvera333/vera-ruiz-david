@@ -1,0 +1,4 @@
+2025-05-21 11:20:50 | Nome: user1 | Email: prueba1@gmail.com | Mensaxe: aaaaaaaaaaaa
+2025-05-21 11:25:34 | Nome: David | Email: david@correo.com | Mensaxe: Proba automatizada
+2025-05-21 11:26:11 | Nome: David | Email: david@correo.com | Mensaxe: Proba automatizada
+2025-05-21 11:26:40 | Nome: David | Email: david@correo.com | Mensaxe: Proba automatizada

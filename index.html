@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
         <div class="alert alert-success" id="mensajeExito" style="display: none;">
             Los datos se han enviado correctamente.
         </div>
-        <form class="needs-validation" novalidate id="formularioContacto">
+        <form class="needs-validation" novalidate id="formularioContacto" action="procesar.php" method="POST">
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
                 <input type="text" class="form-control" id="nome" name="nome" required>
@@ -45,46 +45,10 @@
                 target="_blank">Repositorio Github</a>
         </form>
     </div>
-    <script>
-        (() => {
-            'use strict';
-            const forms = document.querySelectorAll('.needs-validation');
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    event.preventDefault();
-                    form.classList.add('was-validated');
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 
-                    // Validación personalizada para el email
-                    const emailInput = form.querySelector('#email');
-                    const emailValue = emailInput.value;
-                    const emailFeedback = form.querySelector('#emailFeedback');
-                    // Regex para validar emails que terminen en .com, .es, .net, .org, etc.
-                    const emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
-                    if (!emailRegex.test(emailValue)) {
-                        emailInput.setCustomValidity('El correo debe tener un dominio válido (.com, .es, etc.)');
-                        emailFeedback.textContent = 'Por favor, introduce un correo válido con dominio (.com, .es, etc.).';
-                    } else {
-                        emailInput.setCustomValidity('');
-                        emailFeedback.textContent = 'Por favor, introduce un correo válido.';
-                    }
-
-                    // El campo mensaxe ya está validado por minlength y maxlength en HTML
-
-                    if (form.checkValidity()) {
-                        document.getElementById('mensajeExito').style.display = 'block';
-                        setTimeout(() => {
-                            document.getElementById('mensajeExito').style.display = 'none';
-                            form.classList.remove('was-validated');
-                            form.reset();
-                        }, 3000);
-                    }
-                });
-            });
-        })();
-    </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-    crossorigin="anonymous"></script>
 
 </html>
