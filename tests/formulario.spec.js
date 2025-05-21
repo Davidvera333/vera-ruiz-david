@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 test('Envío válido do formulario', async ({ page }) => {
-  await page.goto('http://localhost/vera-ruiz-david/vera-ruiz-david/index.html');
+  await page.goto('http://localhost/vera-ruiz-david/vera-ruiz-david/index.php');
 
   await page.fill('input[name="nome"]', 'David');
   await page.fill('input[name="email"]', 'david@correo.com');
@@ -13,7 +13,7 @@ test('Envío válido do formulario', async ({ page }) => {
 });
 
 test('Envío baleiro do formulario', async ({ page }) => {
-  await page.goto('http://localhost/vera-ruiz-david/vera-ruiz-david/index.html');
+  await page.goto('http://localhost/vera-ruiz-david/vera-ruiz-david/index.php');
 
   // Forzar a eliminación de validación no cliente
   await page.evaluate(() => {
