@@ -7,4 +7,11 @@
 - Este es el URL del repositorio ( https://github.com/Davidvera333/vera-ruiz-david )
 
   # Ejercicio - 2
-  usando el formulario creado anteriormente ,  instalamos las dependencias
+-En mi caso use PlaywRight para los testeos,  usando el formulario creado anteriormente ,  instalamos las dependencias con npx playwright install y parahacer los tests npm install -D @playwright/test, ademas de crear la carpeta tests/ que contendra los scripts , una vez con todo eso configurado, usamos npx playwright test , y nos deberia sacar un resultado tal que asi (npx playwright test
+
+Running 2 tests using 1 worker
+
+  ✓  1 tests\formulario.spec.js:3:1 › Envío válido do formulario (1.1s)
+  ✓  2 tests\formulario.spec.js:15:1 › Envío baleiro do formulario (566ms)
+
+  2 passed (5.6s)
