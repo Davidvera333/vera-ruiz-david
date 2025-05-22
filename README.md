@@ -39,3 +39,5 @@ await expect(page.locator('#confirmacion')).toContainText('Mensaxe enviada corre
 
 test('Envío baleiro do formulario', async ({ page }) => {
 await page.goto('http://localhost/vera-ruiz-david/vera-ruiz-david/index.php');
+
+- Ya que si no , te dara error de que es incapaz de hacer los tests
