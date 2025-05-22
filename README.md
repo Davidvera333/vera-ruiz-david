@@ -19,7 +19,7 @@ Running 2 tests using 1 worker
 2 passed (5.6s)
 /////
 
-# AVISO
+# AVISO PARA UN CORRECTO FUNCIONAMIENTO
 
 - En esta parte del codigo deberas cambiar las urls por las que uses tu :
   (http://localhost/vera-ruiz-david/vera-ruiz-david/index.php)
